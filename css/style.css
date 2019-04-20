@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/3d-Blur-Wallpaper.jpg);
+    background-size: cover;
+}
+
+.dg-container {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    margin-top: 150px;
+}
+
+.dg-wrapper {
+    width: 482px;
+    height: 316px;
+    margin: 0 auto;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.dg-wrapper a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dg-wrapper a.dg-transition {
+    transition: all 0.5s ease-in-out;
+}
+
+.dg-wrapper a img {
+    display: block;
+    border: 8px solid #fff;
+}
+
+.dg-container nav {
+    width: 58px;
+    position: absolute;
+    z-index: 100;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dg-container nav {
+    width: 58px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -29px;
+}
+
+.dg-container nav span {
+    text-indent: -9000px;
+    float: left;
+    cursor: pointer;
+    width: 24px;
+    height: 25px;
+    opacity: 0.8;
+    background: transparent url(../images/arrows.png) no-repeat top left;
+}
+
+.dg-container nav span:hover {
+    opacity: 1;
+}
+
+.dg-container nav span.dg-next {
+    background-position: top right;
+    margin-left: 10px;
+}
